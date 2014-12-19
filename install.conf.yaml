@@ -1,6 +1,7 @@
 - clean: ['~']
 
 - link:
+    ~/bin/lein: bin/lein
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
