@@ -1,5 +1,5 @@
 set nocompatible
-let mapleader = "," 
+let mapleader = ","
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -17,3 +17,6 @@ set guifont=Monaco:h12
 
 " Auto-source .vimrc on change.
 autocmd! BufWritePost .vimrc source %
+
+" Return to the last cursor position when opening a file.
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
