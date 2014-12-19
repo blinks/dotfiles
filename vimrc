@@ -6,6 +6,7 @@ call vundle#begin()
   Plugin 'gmarik/Vundle.vim'
   Plugin 'bling/vim-airline'
   Plugin 'ervandew/supertab'
+  Plugin 'tpope/vim-sensible'
   Plugin 'whatyouhide/vim-gotham'
 call vundle#end()
 filetype plugin indent on
