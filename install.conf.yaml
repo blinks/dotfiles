@@ -1,3 +1,14 @@
-- clean: []
-- link: {}
-- shell: []
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
+    ~/.oh-my-zsh: oh-my-zsh
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [vim +PluginInstall +qall, Installing Vundle plugins]

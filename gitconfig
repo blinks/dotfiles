@@ -1,0 +1,13 @@
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[user]
+	name = Adam Blinkinsop
+	email = blinks@acm.org
+[push]
+	default = simple
+[alias]
+	st = status
+[core]
+	excludesfile = ~/.gitignore
