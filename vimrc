@@ -7,6 +7,7 @@ call vundle#begin()
   Plugin 'gmarik/Vundle.vim'
   Plugin 'bling/vim-airline'
   Plugin 'ervandew/supertab'
+  Plugin 'reedes/vim-wordy'
   Plugin 'tpope/vim-sensible'
   Plugin 'whatyouhide/vim-gotham'
 call vundle#end()
