@@ -13,14 +13,16 @@ plugins=(git vi-mode)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/homebrew/bin:/usr/local/bin:$PATH
+export PATH=$HOME/Development/go_appengine:$PATH
+export PATH=$HOME/.gem/ruby/2.0.0/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
+export GOPATH=$HOME/.gocode
 
 source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim -f'
-fi
+export EDITOR='nvim'
+alias vim=$EDITOR
+alias vi=$EDITOR
+alias t=task
