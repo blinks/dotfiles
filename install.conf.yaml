@@ -1,11 +1,15 @@
 - clean: ['~']
 
 - link:
-    ~/bin/lein: bin/lein
+    ~/bin:
+      relink: true
+      path: bin/
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
-    ~/.oh-my-zsh: oh-my-zsh
+    ~/.oh-my-zsh:
+      relink: true
+      path: oh-my-zsh/
     ~/.taskrc: taskrc
     ~/.zshrc: zshrc
 
