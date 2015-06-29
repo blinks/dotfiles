@@ -2,15 +2,22 @@
 
 - link:
     ~/bin:
+      force: true
       relink: true
       path: bin/
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.oh-my-zsh:
+      force: true
       relink: true
       path: oh-my-zsh/
     ~/.taskrc: taskrc
+    ~/vim:
+      force: true
+      relink: true
+      path: vim/
+    ~/.vimrc: vimrc
     ~/.zshrc: zshrc
 
 - shell:
