@@ -22,7 +22,7 @@ export GOPATH=$HOME/.gocode
 source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
-export EDITOR='nvim'
+export EDITOR='vim'
 alias vim=$EDITOR
 alias vi=$EDITOR
 alias t=task

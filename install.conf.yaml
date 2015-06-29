@@ -6,11 +6,9 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.oh-my-zsh: oh-my-zsh
-    ~/.nvim: vim
-    ~/.nvimrc: vimrc
     ~/.taskrc: taskrc
     ~/.zshrc: zshrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [nvim +PluginInstall +qall, Installing Vundle plugins]
+  - [vim +PluginInstall +qall, Installing Vundle plugins]
