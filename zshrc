@@ -16,6 +16,7 @@ plugins=(git taskwarrior vi-mode)
 export PATH=$HOME/bin:$HOME/homebrew/bin:/usr/local/bin:$PATH
 export PATH=$HOME/Development/go_appengine:$PATH
 export PATH=$HOME/.gem/ruby/2.0.0/bin:$PATH
+export PATH=$PATH:$HOME/anaconda/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=$HOME/.gocode
 
@@ -26,3 +27,9 @@ export EDITOR='vim'
 alias vim=$EDITOR
 alias vi=$EDITOR
 alias t=task
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/blinks/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/blinks/google-cloud-sdk/completion.zsh.inc'
