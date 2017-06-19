@@ -9,14 +9,13 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git taskwarrior vi-mode)
+plugins=(brew git vi-mode)
 
 # User configuration
 
-export PATH=$HOME/bin:$HOME/homebrew/bin:/usr/local/bin:$PATH
-export PATH=$HOME/Development/go_appengine:$PATH
-export PATH=$HOME/.gem/ruby/2.0.0/bin:$PATH
-export PATH=$PATH:$HOME/anaconda/bin
+source $HOME/.profile
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=$HOME/.gocode
 
@@ -26,10 +25,11 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 alias vim=$EDITOR
 alias vi=$EDITOR
-alias t=task
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/blinks/google-cloud-sdk/path.zsh.inc'
+# Homebrew stuff
+export PATH=$HOME/homebrew/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
+export HOMEBREW_NO_ANALYTICS=1
 
-# The next line enables shell command completion for gcloud.
-source '/Users/blinks/google-cloud-sdk/completion.zsh.inc'
+# rbenv stuff
+eval "$(rbenv init -)"
