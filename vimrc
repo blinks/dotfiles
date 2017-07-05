@@ -7,7 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
   Plugin 'bling/vim-airline'
   Plugin 'ervandew/supertab'
-  Plugin 'gmarik/Vundle.vim'
+  Plugin 'VundleVim/Vundle.vim'
   Plugin 'leafgarland/typescript-vim'
   Plugin 'ludovicchabant/vim-gutentags'
   Plugin 'mustache/vim-mustache-handlebars'
@@ -20,7 +20,7 @@ call vundle#end()
 filetype plugin indent on
 
 colorscheme gotham
-set guifont=Hack:h14
+set guifont=Menlo:h14
 
 " Auto-source .vimrc on change.
 autocmd! BufWritePost .vimrc source %
