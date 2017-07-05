@@ -30,6 +30,3 @@ alias vi=$EDITOR
 export PATH=$HOME/homebrew/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
 export HOMEBREW_NO_ANALYTICS=1
-
-# rbenv stuff
-eval "$(rbenv init -)"

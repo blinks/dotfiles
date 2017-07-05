@@ -13,7 +13,7 @@
       relink: true
       path: oh-my-zsh/
     ~/.taskrc: taskrc
-    ~/vim:
+    ~/.vim:
       force: true
       relink: true
       path: vim/
