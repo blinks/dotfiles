@@ -16,6 +16,7 @@ call vundle#begin()
   Plugin 'tpope/vim-sensible'
   Plugin 'tpope/vim-sleuth'
   Plugin 'whatyouhide/vim-gotham'
+  Plugin 'justinj/vim-pico8-syntax'
 call vundle#end()
 filetype plugin indent on
 
@@ -36,3 +37,7 @@ function! AsciidocCompileAndRunFile()
   silent !clear
   execute "!" . g:asciidoc_command . " " . bufname("%")
 endfunction
+
+set ts=2
+set sw=2
+set autochdir

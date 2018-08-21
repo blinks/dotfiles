@@ -1,2 +1,6 @@
 vim/bundle
 vim/.netrwhist
+bin/butler
+
+*.dylib
+*.so

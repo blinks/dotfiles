@@ -15,9 +15,10 @@ plugins=(brew git vi-mode)
 
 source $HOME/.profile
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.4.0/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=$HOME/.gocode
+export PATH="$GOPATH/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -30,3 +31,7 @@ alias vi=$EDITOR
 export PATH=$HOME/homebrew/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
 export HOMEBREW_NO_ANALYTICS=1
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
