@@ -9,7 +9,6 @@ call vundle#begin()
   Plugin 'ervandew/supertab'
   Plugin 'VundleVim/Vundle.vim'
   Plugin 'leafgarland/typescript-vim'
-  Plugin 'ludovicchabant/vim-gutentags'
   Plugin 'mustache/vim-mustache-handlebars'
   Plugin 'reedes/vim-wordy'
   Plugin 'rust-lang/rust.vim'
@@ -17,6 +16,7 @@ call vundle#begin()
   Plugin 'tpope/vim-sleuth'
   Plugin 'whatyouhide/vim-gotham'
   Plugin 'justinj/vim-pico8-syntax'
+  Plugin 'l04m33/vlime', {'rtp': 'vim/'}
 call vundle#end()
 filetype plugin indent on
 

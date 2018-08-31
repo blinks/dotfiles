@@ -15,7 +15,7 @@ plugins=(git vi-mode)
 
 source $HOME/.profile
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
-export PATH="$HOME/.gem/ruby/2.4.0/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=$HOME/.gocode
 export PATH="$GOPATH/bin:$PATH"
