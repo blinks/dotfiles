@@ -12,6 +12,7 @@
       force: true
       relink: true
       path: oh-my-zsh/
+    ~/.sbclrc: sbclrc
     ~/.taskrc: taskrc
     ~/.vim:
       force: true
