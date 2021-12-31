@@ -2,12 +2,17 @@
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
+[init]
+	defaultBranch = main
 [user]
 	name = Adam Blinkinsop
 	email = blinks@acm.org
 [push]
 	default = simple
 [alias]
+	co = checkout
+	br = branch
+	ci = commit
 	st = status
 [core]
 	excludesfile = ~/.gitignore
