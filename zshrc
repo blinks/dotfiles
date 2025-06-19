@@ -31,6 +31,7 @@ alias vi=$EDITOR
 export PATH=$HOME/homebrew/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
 export HOMEBREW_NO_ANALYTICS=1
+eval "$(rbenv init - zsh)"  # ruby versioning.
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
